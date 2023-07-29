@@ -15,7 +15,7 @@ namespace FlexCore.Models
         public bool Status { get; set; }
         public DateTime CreateTime { get; set; }
 
-        public virtual Members fk_Member { get; set; }
-        public virtual ProductGroups fk_ProductGroup { get; set; }
+        public virtual Member fk_Member { get; set; }
+        public virtual ProductGroup fk_ProductGroup { get; set; }
     }
 }

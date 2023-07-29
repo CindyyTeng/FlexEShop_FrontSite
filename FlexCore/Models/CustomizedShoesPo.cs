@@ -9,9 +9,9 @@ namespace FlexCore.Models
     {
         public CustomizedShoesPo()
         {
-            CustomizedOrders = new HashSet<CustomizedOrders>();
-            ShoesGroups = new HashSet<ShoesGroups>();
-            ShoesPictures = new HashSet<ShoesPictures>();
+            CustomizedOrders = new HashSet<CustomizedOrder>();
+            ShoesGroups = new HashSet<ShoesGroup>();
+            ShoesPictures = new HashSet<ShoesPicture>();
         }
 
         public int ShoesProductId { get; set; }
@@ -27,10 +27,10 @@ namespace FlexCore.Models
         public DateTime DataCreateTime { get; set; }
         public DateTime DataEditTime { get; set; }
 
-        public virtual ShoesCategories fk_ShoesCategory { get; set; }
-        public virtual ShoesColorCategories fk_ShoesColor { get; set; }
-        public virtual ICollection<CustomizedOrders> CustomizedOrders { get; set; }
-        public virtual ICollection<ShoesGroups> ShoesGroups { get; set; }
-        public virtual ICollection<ShoesPictures> ShoesPictures { get; set; }
+        public virtual ShoesCategory fk_ShoesCategory { get; set; }
+        public virtual ShoesColorCategory fk_ShoesColor { get; set; }
+        public virtual ICollection<CustomizedOrder> CustomizedOrders { get; set; }
+        public virtual ICollection<ShoesGroup> ShoesGroups { get; set; }
+        public virtual ICollection<ShoesPicture> ShoesPictures { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using FlexCore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Activity = System.Diagnostics.Activity;
 
 namespace FlexCore.Controllers
 {

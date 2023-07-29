@@ -16,7 +16,7 @@ namespace FlexCore.Models
         public DateTime EffectiveDate { get; set; }
         public DateTime ExpirationDate { get; set; }
 
-        public virtual Members fk_Member { get; set; }
-        public virtual orders fk_Order { get; set; }
+        public virtual Member fk_Member { get; set; }
+        public virtual order fk_Order { get; set; }
     }
 }

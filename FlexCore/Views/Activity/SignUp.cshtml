@@ -1,0 +1,71 @@
+﻿@section Styles{
+ 
+}
+
+
+@*body內容*@
+<div id="app">
+    <div class="mb-3">
+        <label class="form-label">姓名</label>
+        <input type="text" v-model="name" class="form-control" placeholder="請輸入姓名">
+
+        {{name}}
+    </div>
+    <div class="mb-3">
+        <label class="form-label">電話</label>
+        <input type="text" v-model="phone" class="form-control" placeholder="請輸入電話">
+
+        {{phone}}
+    </div>
+
+    <br>
+    <button @@click="send">確認報名</button>
+
+</div>
+
+
+
+@section Scripts{
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+            integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        var vueApp = {
+            data() {
+                return {
+                    name: "",
+                    phone: ""
+                };
+            },
+            methods: {
+                send: function () {
+                    var uri = "https://localhost:7238/api/Activity"
+                    var req = {
+                        name: this.name,
+                        phone: this.phone
+                    }
+                    console.log(req);
+                    axios.get(uri, {
+                        params:{
+                            name: this.name,
+                            phone: this.phone
+                        }
+                    })
+                        .then(res=>{
+                            console.log(res.data)
+                        })
+                        .catch(res=>{
+                            alert(res);
+                        });
+                }
+
+            }
+        }
+
+        var app = Vue.createApp(vueApp).mount("#app");
+
+    </script>
+
+}

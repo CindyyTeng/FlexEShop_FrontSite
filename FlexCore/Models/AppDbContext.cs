@@ -18,77 +18,76 @@ namespace FlexCore.Models
         {
         }
 
-        public virtual DbSet<Activities> Activities { get; set; }
-        public virtual DbSet<ActivityCategories> ActivityCategories { get; set; }
-        public virtual DbSet<ActivityStatuses> ActivityStatuses { get; set; }
-        public virtual DbSet<AlternateAddresses> AlternateAddresses { get; set; }
-        public virtual DbSet<BlackLists> BlackLists { get; set; }
-        public virtual DbSet<Branches> Branches { get; set; }
-        public virtual DbSet<CartItems> CartItems { get; set; }
-        public virtual DbSet<ColorCategories> ColorCategories { get; set; }
-        public virtual DbSet<CouponCategories> CouponCategories { get; set; }
-        public virtual DbSet<CouponSendings> CouponSendings { get; set; }
-        public virtual DbSet<Coupons> Coupons { get; set; }
-        public virtual DbSet<CustomizedOrders> CustomizedOrders { get; set; }
-        public virtual DbSet<CustomizedShoesPo> CustomizedShoesPo { get; set; }
-        public virtual DbSet<Customized_materials> Customized_materials { get; set; }
-        public virtual DbSet<Departments> Departments { get; set; }
-        public virtual DbSet<Discounts> Discounts { get; set; }
-        public virtual DbSet<JobTitles> JobTitles { get; set; }
-        public virtual DbSet<MemberPoints> MemberPoints { get; set; }
-        public virtual DbSet<Members> Members { get; set; }
-        public virtual DbSet<MembershipLevels> MembershipLevels { get; set; }
-        public virtual DbSet<OneToOneReservations> OneToOneReservations { get; set; }
-        public virtual DbSet<PointHistories> PointHistories { get; set; }
-        public virtual DbSet<PointManage> PointManage { get; set; }
-        public virtual DbSet<PointTradeIn> PointTradeIn { get; set; }
-        public virtual DbSet<Privileges> Privileges { get; set; }
-        public virtual DbSet<ProductCategories> ProductCategories { get; set; }
-        public virtual DbSet<ProductComment> ProductComment { get; set; }
-        public virtual DbSet<ProductGroups> ProductGroups { get; set; }
-        public virtual DbSet<ProductImgs> ProductImgs { get; set; }
-        public virtual DbSet<ProductSubCategories> ProductSubCategories { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
-        public virtual DbSet<ProjectTagItems> ProjectTagItems { get; set; }
-        public virtual DbSet<ProjectTags> ProjectTags { get; set; }
-        public virtual DbSet<ReservationStatuses> ReservationStatuses { get; set; }
-        public virtual DbSet<SalesCategories> SalesCategories { get; set; }
-        public virtual DbSet<ShoesCategories> ShoesCategories { get; set; }
-        public virtual DbSet<ShoesChooses> ShoesChooses { get; set; }
-        public virtual DbSet<ShoesColorCategories> ShoesColorCategories { get; set; }
-        public virtual DbSet<ShoesGroups> ShoesGroups { get; set; }
-        public virtual DbSet<ShoesPictures> ShoesPictures { get; set; }
-        public virtual DbSet<ShoppingCarts> ShoppingCarts { get; set; }
-        public virtual DbSet<SizeCategories> SizeCategories { get; set; }
-        public virtual DbSet<SpeakerFields> SpeakerFields { get; set; }
-        public virtual DbSet<Speakers> Speakers { get; set; }
-        public virtual DbSet<StaffPermissions> StaffPermissions { get; set; }
-        public virtual DbSet<Staffs> Staffs { get; set; }
-        public virtual DbSet<Suppliers> Suppliers { get; set; }
-        public virtual DbSet<Type> Type { get; set; }
-        public virtual DbSet<logistics_companies> logistics_companies { get; set; }
-        public virtual DbSet<orderItems> orderItems { get; set; }
-        public virtual DbSet<order_statuses> order_statuses { get; set; }
-        public virtual DbSet<orders> orders { get; set; }
-        public virtual DbSet<pay_methods> pay_methods { get; set; }
-        public virtual DbSet<pay_statuses> pay_statuses { get; set; }
+        public virtual DbSet<Activity> Activities { get; set; }
+        public virtual DbSet<ActivityCategory> ActivityCategories { get; set; }
+        public virtual DbSet<ActivityImg> ActivityImgs { get; set; }
+        public virtual DbSet<ActivityStatus> ActivityStatuses { get; set; }
+        public virtual DbSet<AlternateAddress> AlternateAddresses { get; set; }
+        public virtual DbSet<BlackList> BlackLists { get; set; }
+        public virtual DbSet<Branch> Branches { get; set; }
+        public virtual DbSet<CartItem> CartItems { get; set; }
+        public virtual DbSet<ColorCategory> ColorCategories { get; set; }
+        public virtual DbSet<Coupon> Coupons { get; set; }
+        public virtual DbSet<CouponCategory> CouponCategories { get; set; }
+        public virtual DbSet<CouponSending> CouponSendings { get; set; }
+        public virtual DbSet<CustomizedOrder> CustomizedOrders { get; set; }
+        public virtual DbSet<CustomizedShoesPo> CustomizedShoesPos { get; set; }
+        public virtual DbSet<Customized_material> Customized_materials { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
+        public virtual DbSet<Discount> Discounts { get; set; }
+        public virtual DbSet<JobTitle> JobTitles { get; set; }
+        public virtual DbSet<Member> Members { get; set; }
+        public virtual DbSet<MemberPoint> MemberPoints { get; set; }
+        public virtual DbSet<MembershipLevel> MembershipLevels { get; set; }
+        public virtual DbSet<OneToOneReservation> OneToOneReservations { get; set; }
+        public virtual DbSet<PointHistory> PointHistories { get; set; }
+        public virtual DbSet<PointManage> PointManages { get; set; }
+        public virtual DbSet<PointTradeIn> PointTradeIns { get; set; }
+        public virtual DbSet<Privilege> Privileges { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<ProductCategory> ProductCategories { get; set; }
+        public virtual DbSet<ProductComment> ProductComments { get; set; }
+        public virtual DbSet<ProductGroup> ProductGroups { get; set; }
+        public virtual DbSet<ProductImg> ProductImgs { get; set; }
+        public virtual DbSet<ProductSubCategory> ProductSubCategories { get; set; }
+        public virtual DbSet<ProjectTag> ProjectTags { get; set; }
+        public virtual DbSet<ProjectTagItem> ProjectTagItems { get; set; }
+        public virtual DbSet<ReservationImg> ReservationImgs { get; set; }
+        public virtual DbSet<ReservationStatus> ReservationStatuses { get; set; }
+        public virtual DbSet<SalesCategory> SalesCategories { get; set; }
+        public virtual DbSet<ShoesCategory> ShoesCategories { get; set; }
+        public virtual DbSet<ShoesChoose> ShoesChooses { get; set; }
+        public virtual DbSet<ShoesColorCategory> ShoesColorCategories { get; set; }
+        public virtual DbSet<ShoesGroup> ShoesGroups { get; set; }
+        public virtual DbSet<ShoesPicture> ShoesPictures { get; set; }
+        public virtual DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public virtual DbSet<SizeCategory> SizeCategories { get; set; }
+        public virtual DbSet<Speaker> Speakers { get; set; }
+        public virtual DbSet<SpeakerField> SpeakerFields { get; set; }
+        public virtual DbSet<Staff> Staffs { get; set; }
+        public virtual DbSet<StaffPermission> StaffPermissions { get; set; }
+        public virtual DbSet<Supplier> Suppliers { get; set; }
+        public virtual DbSet<Type> Types { get; set; }
+        public virtual DbSet<logistics_company> logistics_companies { get; set; }
+        public virtual DbSet<order> orders { get; set; }
+        public virtual DbSet<orderItem> orderItems { get; set; }
+        public virtual DbSet<order_status> order_statuses { get; set; }
+        public virtual DbSet<pay_method> pay_methods { get; set; }
+        public virtual DbSet<pay_status> pay_statuses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                IConfigurationRoot conn = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json").Build();
-                optionsBuilder.UseSqlServer(conn.GetConnectionString("AppDbContext"));
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Flex;User ID=sa5;Password=sa5");
             }
         }
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Activities>(entity =>
+            modelBuilder.Entity<Activity>(entity =>
             {
-                entity.HasKey(e => e.ActivityId)
-                    .HasName("PK__Activiti__45F4A79180197594");
-
                 entity.Property(e => e.ActivityBookEndTime).HasColumnType("datetime");
 
                 entity.Property(e => e.ActivityBookStartTime).HasColumnType("datetime");
@@ -96,10 +95,6 @@ namespace FlexCore.Models
                 entity.Property(e => e.ActivityDate).HasColumnType("datetime");
 
                 entity.Property(e => e.ActivityDescription).HasMaxLength(300);
-
-                entity.Property(e => e.ActivityImage)
-                    .IsRequired()
-                    .HasMaxLength(300);
 
                 entity.Property(e => e.ActivityName)
                     .IsRequired()
@@ -130,33 +125,42 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__Activitie__fk_Sp__42E1EEFE");
             });
 
-            modelBuilder.Entity<ActivityCategories>(entity =>
+            modelBuilder.Entity<ActivityCategory>(entity =>
             {
-                entity.HasKey(e => e.ActivityCategoryId)
-                    .HasName("PK__Activity__71C78C65EE613529");
-
                 entity.Property(e => e.ActivityCategoryName)
                     .IsRequired()
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<ActivityStatuses>(entity =>
+            modelBuilder.Entity<ActivityImg>(entity =>
             {
-                entity.HasKey(e => e.ActivityStatusId)
-                    .HasName("PK__Activity__860CFEADC7081C8F");
+                entity.ToTable("ActivityImg");
 
-                entity.HasIndex(e => e.ActivityStatusDescription, "UQ__Activity__732635EC447230AF")
+                entity.Property(e => e.ImgPath)
+                    .IsRequired()
+                    .HasMaxLength(300);
+
+                entity.HasOne(d => d.fk_Activity)
+                    .WithMany(p => p.ActivityImgs)
+                    .HasForeignKey(d => d.fk_ActivityId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__ActivityI__fk_Ac__04AFB25B");
+            });
+
+            modelBuilder.Entity<ActivityStatus>(entity =>
+            {
+                entity.HasIndex(e => e.ActivityStatusDescription, "UQ__Activity__732635EC09783662")
                     .IsUnique();
 
                 entity.Property(e => e.ActivityStatusDescription).HasMaxLength(50);
             });
 
-            modelBuilder.Entity<AlternateAddresses>(entity =>
+            modelBuilder.Entity<AlternateAddress>(entity =>
             {
                 entity.HasKey(e => e.AddressId)
-                    .HasName("PK__Alternat__091C2AFBFC0923EF");
+                    .HasName("PK__Alternat__091C2AFB22A0F042");
 
-                entity.HasIndex(e => e.fk_MemberId, "UQ__Alternat__3B54230CE45883AB")
+                entity.HasIndex(e => e.fk_MemberId, "UQ__Alternat__3B54230C9CD9161F")
                     .IsUnique();
 
                 entity.Property(e => e.AlternateAddress1).HasMaxLength(300);
@@ -164,16 +168,13 @@ namespace FlexCore.Models
                 entity.Property(e => e.AlternateAddress2).HasMaxLength(300);
 
                 entity.HasOne(d => d.fk_Member)
-                    .WithOne(p => p.AlternateAddresses)
-                    .HasForeignKey<AlternateAddresses>(d => d.fk_MemberId)
+                    .WithOne(p => p.AlternateAddress)
+                    .HasForeignKey<AlternateAddress>(d => d.fk_MemberId)
                     .HasConstraintName("FK__Alternate__fk_Me__3D2915A8");
             });
 
-            modelBuilder.Entity<BlackLists>(entity =>
+            modelBuilder.Entity<BlackList>(entity =>
             {
-                entity.HasKey(e => e.BlackListId)
-                    .HasName("PK__BlackLis__B54E3C740D440FFD");
-
                 entity.Property(e => e.Behavior)
                     .IsRequired()
                     .HasMaxLength(30);
@@ -183,15 +184,12 @@ namespace FlexCore.Models
                     .HasDefaultValueSql("(getdate())");
             });
 
-            modelBuilder.Entity<Branches>(entity =>
+            modelBuilder.Entity<Branch>(entity =>
             {
-                entity.HasKey(e => e.BranchId)
-                    .HasName("PK__Branches__A1682FC50B531F28");
-
-                entity.HasIndex(e => e.BranchName, "UQ__Branches__3903DB0337EC7D56")
+                entity.HasIndex(e => e.BranchName, "UQ__Branches__3903DB03F48D7F8C")
                     .IsUnique();
 
-                entity.HasIndex(e => e.BranchAddress, "UQ__Branches__F50DE17A510A16F0")
+                entity.HasIndex(e => e.BranchAddress, "UQ__Branches__F50DE17AE962A119")
                     .IsUnique();
 
                 entity.Property(e => e.BranchAddress)
@@ -203,20 +201,17 @@ namespace FlexCore.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<CartItems>(entity =>
+            modelBuilder.Entity<CartItem>(entity =>
             {
-                entity.HasKey(e => e.CartItemId)
-                    .HasName("PK_CartItem");
-
                 entity.Property(e => e.CartItemId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description)
                     .IsRequired()
                     .HasMaxLength(700);
 
-                entity.HasOne(d => d.CartItem)
-                    .WithOne(p => p.CartItems)
-                    .HasForeignKey<CartItems>(d => d.CartItemId)
+                entity.HasOne(d => d.CartItemNavigation)
+                    .WithOne(p => p.CartItem)
+                    .HasForeignKey<CartItem>(d => d.CartItemId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_CartItem_CartItem");
 
@@ -227,7 +222,7 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_CartItems_Type");
             });
 
-            modelBuilder.Entity<ColorCategories>(entity =>
+            modelBuilder.Entity<ColorCategory>(entity =>
             {
                 entity.HasKey(e => e.ColorId)
                     .HasName("PK_ColorCategory");
@@ -237,43 +232,8 @@ namespace FlexCore.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<CouponCategories>(entity =>
+            modelBuilder.Entity<Coupon>(entity =>
             {
-                entity.HasKey(e => e.CouponCategoryId)
-                    .HasName("PK_coupon_category");
-
-                entity.Property(e => e.CouponCategoryId).ValueGeneratedNever();
-
-                entity.Property(e => e.CouponCategoryName)
-                    .IsRequired()
-                    .HasMaxLength(20);
-            });
-
-            modelBuilder.Entity<CouponSendings>(entity =>
-            {
-                entity.HasKey(e => e.SendingId)
-                    .HasName("PK_CouponSending");
-
-                entity.Property(e => e.RedeemedDate).HasColumnType("datetime");
-
-                entity.Property(e => e.SentDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.fk_Coupon)
-                    .WithMany(p => p.CouponSendings)
-                    .HasForeignKey(d => d.fk_CouponId)
-                    .HasConstraintName("FK_CouponSending_Coupon");
-
-                entity.HasOne(d => d.fk_Member)
-                    .WithMany(p => p.CouponSendings)
-                    .HasForeignKey(d => d.fk_MemberId)
-                    .HasConstraintName("FK_CouponSendings_Members");
-            });
-
-            modelBuilder.Entity<Coupons>(entity =>
-            {
-                entity.HasKey(e => e.CouponId)
-                    .HasName("PK_Coupon");
-
                 entity.Property(e => e.CouponCode).HasMaxLength(50);
 
                 entity.Property(e => e.CouponDescription).HasMaxLength(100);
@@ -300,10 +260,39 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_Coupon_ProjectTag");
             });
 
-            modelBuilder.Entity<CustomizedOrders>(entity =>
+            modelBuilder.Entity<CouponCategory>(entity =>
+            {
+                entity.Property(e => e.CouponCategoryId).ValueGeneratedNever();
+
+                entity.Property(e => e.CouponCategoryName)
+                    .IsRequired()
+                    .HasMaxLength(20);
+            });
+
+            modelBuilder.Entity<CouponSending>(entity =>
+            {
+                entity.HasKey(e => e.SendingId)
+                    .HasName("PK_CouponSending");
+
+                entity.Property(e => e.RedeemedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.SentDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.fk_Coupon)
+                    .WithMany(p => p.CouponSendings)
+                    .HasForeignKey(d => d.fk_CouponId)
+                    .HasConstraintName("FK_CouponSending_Coupon");
+
+                entity.HasOne(d => d.fk_Member)
+                    .WithMany(p => p.CouponSendings)
+                    .HasForeignKey(d => d.fk_MemberId)
+                    .HasConstraintName("FK_CouponSendings_Members");
+            });
+
+            modelBuilder.Entity<CustomizedOrder>(entity =>
             {
                 entity.HasKey(e => e.Customized_Id)
-                    .HasName("PK__Customiz__AFADABDD0726594E");
+                    .HasName("PK__Customiz__AFADABDD763A6DC8");
 
                 entity.Property(e => e.Customized_number)
                     .IsRequired()
@@ -317,17 +306,17 @@ namespace FlexCore.Models
                 entity.Property(e => e.Remark).HasMaxLength(254);
 
                 entity.HasOne(d => d.Customized_EdgeProtectionNavigation)
-                    .WithMany(p => p.CustomizedOrdersCustomized_EdgeProtectionNavigation)
+                    .WithMany(p => p.CustomizedOrderCustomized_EdgeProtectionNavigations)
                     .HasForeignKey(d => d.Customized_EdgeProtection)
                     .HasConstraintName("FK__Customize__Custo__4C6B5938");
 
                 entity.HasOne(d => d.Customized_EyeletNavigation)
-                    .WithMany(p => p.CustomizedOrdersCustomized_EyeletNavigation)
+                    .WithMany(p => p.CustomizedOrderCustomized_EyeletNavigations)
                     .HasForeignKey(d => d.Customized_Eyelet)
                     .HasConstraintName("FK__Customize__Custo__4B7734FF");
 
                 entity.HasOne(d => d.Customized_RearNavigation)
-                    .WithMany(p => p.CustomizedOrdersCustomized_RearNavigation)
+                    .WithMany(p => p.CustomizedOrderCustomized_RearNavigations)
                     .HasForeignKey(d => d.Customized_Rear)
                     .HasConstraintName("FK__Customize__Custo__4D5F7D71");
 
@@ -337,12 +326,12 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__Customize__Custo__46B27FE2");
 
                 entity.HasOne(d => d.Customized_ToeNavigation)
-                    .WithMany(p => p.CustomizedOrdersCustomized_ToeNavigation)
+                    .WithMany(p => p.CustomizedOrderCustomized_ToeNavigations)
                     .HasForeignKey(d => d.Customized_Toe)
                     .HasConstraintName("FK__Customize__Custo__4F47C5E3");
 
                 entity.HasOne(d => d.Customized_TongueNavigation)
-                    .WithMany(p => p.CustomizedOrdersCustomized_TongueNavigation)
+                    .WithMany(p => p.CustomizedOrderCustomized_TongueNavigations)
                     .HasForeignKey(d => d.Customized_Tongue)
                     .HasConstraintName("FK__Customize__Custo__4E53A1AA");
 
@@ -356,6 +345,8 @@ namespace FlexCore.Models
             {
                 entity.HasKey(e => e.ShoesProductId)
                     .HasName("PK__Customiz__D7D2FD91792B994F");
+
+                entity.ToTable("CustomizedShoesPo");
 
                 entity.Property(e => e.DataCreateTime)
                     .HasColumnType("datetime")
@@ -382,39 +373,33 @@ namespace FlexCore.Models
                     .HasDefaultValueSql("('false')");
 
                 entity.HasOne(d => d.fk_ShoesCategory)
-                    .WithMany(p => p.CustomizedShoesPo)
+                    .WithMany(p => p.CustomizedShoesPos)
                     .HasForeignKey(d => d.fk_ShoesCategoryId)
                     .HasConstraintName("FK__Customize__fk_Sh__44CA3770");
 
                 entity.HasOne(d => d.fk_ShoesColor)
-                    .WithMany(p => p.CustomizedShoesPo)
+                    .WithMany(p => p.CustomizedShoesPos)
                     .HasForeignKey(d => d.fk_ShoesColorId)
                     .HasConstraintName("FK__Customize__fk_Sh__45BE5BA9");
             });
 
-            modelBuilder.Entity<Customized_materials>(entity =>
+            modelBuilder.Entity<Customized_material>(entity =>
             {
                 entity.HasKey(e => e.Shoesmaterial_Id)
-                    .HasName("PK__Customiz__06EFE12D5C3BEC68");
+                    .HasName("PK__Customiz__06EFE12D1883C824");
 
                 entity.Property(e => e.material_Name)
                     .IsRequired()
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Departments>(entity =>
+            modelBuilder.Entity<Department>(entity =>
             {
-                entity.HasKey(e => e.DepartmentId)
-                    .HasName("PK__Departme__B2079BED023F95C3");
-
                 entity.Property(e => e.DepartmentName).HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Discounts>(entity =>
+            modelBuilder.Entity<Discount>(entity =>
             {
-                entity.HasKey(e => e.DiscountId)
-                    .HasName("PK_Discount");
-
                 entity.Property(e => e.DiscountDescription).HasMaxLength(100);
 
                 entity.Property(e => e.DiscountName)
@@ -434,7 +419,7 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_Discount_DiscountGroup");
             });
 
-            modelBuilder.Entity<JobTitles>(entity =>
+            modelBuilder.Entity<JobTitle>(entity =>
             {
                 entity.HasKey(e => e.TitleId)
                     .HasName("PK__JobTitle__75758986DFA010AD");
@@ -445,23 +430,8 @@ namespace FlexCore.Models
                 entity.Property(e => e.TitleName).HasMaxLength(50);
             });
 
-            modelBuilder.Entity<MemberPoints>(entity =>
+            modelBuilder.Entity<Member>(entity =>
             {
-                entity.HasIndex(e => e.fk_MemberId, "UQ__MemberPo__3B54230C8C81DA21")
-                    .IsUnique();
-
-                entity.HasOne(d => d.fk_Member)
-                    .WithOne(p => p.MemberPoints)
-                    .HasForeignKey<MemberPoints>(d => d.fk_MemberId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__MemberPoi__fk_Me__4E53A1AA");
-            });
-
-            modelBuilder.Entity<Members>(entity =>
-            {
-                entity.HasKey(e => e.MemberId)
-                    .HasName("PK__Members__0CF04B18BDECE389");
-
                 entity.HasIndex(e => e.Mobile, "UQ__Members__6FAE0782E1A56EB7")
                     .IsUnique();
 
@@ -520,7 +490,22 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__Members__fk_Leve__00DF2177");
             });
 
-            modelBuilder.Entity<MembershipLevels>(entity =>
+            modelBuilder.Entity<MemberPoint>(entity =>
+            {
+                entity.HasKey(e => e.MemberPointsId)
+                    .HasName("PK__MemberPo__8D672C97D8EFE351");
+
+                entity.HasIndex(e => e.fk_MemberId, "UQ__MemberPo__3B54230C8C81DA21")
+                    .IsUnique();
+
+                entity.HasOne(d => d.fk_Member)
+                    .WithOne(p => p.MemberPoint)
+                    .HasForeignKey<MemberPoint>(d => d.fk_MemberId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__MemberPoi__fk_Me__4E53A1AA");
+            });
+
+            modelBuilder.Entity<MembershipLevel>(entity =>
             {
                 entity.HasKey(e => e.LevelId)
                     .HasName("PK__Membersh__09F03C26F7CA5148");
@@ -536,24 +521,24 @@ namespace FlexCore.Models
                     .HasMaxLength(30)
                     .IsUnicode(false);
 
-                entity.HasMany(d => d.fk_Privilege)
-                    .WithMany(p => p.fk_Level)
+                entity.HasMany(d => d.fk_Privileges)
+                    .WithMany(p => p.fk_Levels)
                     .UsingEntity<Dictionary<string, object>>(
-                        "MembershipLevelPrivileges",
-                        l => l.HasOne<Privileges>().WithMany().HasForeignKey("fk_PrivilegeId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Membershi__fk_Pr__531856C7"),
-                        r => r.HasOne<MembershipLevels>().WithMany().HasForeignKey("fk_LevelId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Membershi__fk_Le__01D345B0"),
+                        "MembershipLevelPrivilege",
+                        l => l.HasOne<Privilege>().WithMany().HasForeignKey("fk_PrivilegeId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Membershi__fk_Pr__531856C7"),
+                        r => r.HasOne<MembershipLevel>().WithMany().HasForeignKey("fk_LevelId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Membershi__fk_Le__01D345B0"),
                         j =>
                         {
-                            j.HasKey("fk_LevelId", "fk_PrivilegeId").HasName("PK__Membersh__580C8EAADD046AAF");
+                            j.HasKey("fk_LevelId", "fk_PrivilegeId").HasName("PK__Membersh__580C8EAA7D875808");
 
                             j.ToTable("MembershipLevelPrivileges");
                         });
             });
 
-            modelBuilder.Entity<OneToOneReservations>(entity =>
+            modelBuilder.Entity<OneToOneReservation>(entity =>
             {
                 entity.HasKey(e => e.ReservationId)
-                    .HasName("PK__OneToOne__B7EE5F24C0E796CD");
+                    .HasName("PK__OneToOne__B7EE5F24094A1883");
 
                 entity.Property(e => e.ReservationCreatedDate)
                     .HasColumnType("datetime")
@@ -588,11 +573,8 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__OneToOneR__fk_Re__5AB9788F");
             });
 
-            modelBuilder.Entity<PointHistories>(entity =>
+            modelBuilder.Entity<PointHistory>(entity =>
             {
-                entity.HasKey(e => e.PointHistoryId)
-                    .HasName("PK__PointHis__DBE13F178E6B8343");
-
                 entity.Property(e => e.EffectiveDate)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
@@ -620,10 +602,12 @@ namespace FlexCore.Models
 
             modelBuilder.Entity<PointManage>(entity =>
             {
+                entity.ToTable("PointManage");
+
                 entity.Property(e => e.PointExpirationDate).HasColumnType("datetime");
 
                 entity.HasOne(d => d.fk_Type)
-                    .WithMany(p => p.PointManage)
+                    .WithMany(p => p.PointManages)
                     .HasForeignKey(d => d.fk_TypeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_PointManage_Type");
@@ -631,6 +615,8 @@ namespace FlexCore.Models
 
             modelBuilder.Entity<PointTradeIn>(entity =>
             {
+                entity.ToTable("PointTradeIn");
+
                 entity.Property(e => e.EffectiveDate)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
@@ -650,22 +636,19 @@ namespace FlexCore.Models
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.fk_Member)
-                    .WithMany(p => p.PointTradeIn)
+                    .WithMany(p => p.PointTradeIns)
                     .HasForeignKey(d => d.fk_MemberId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_PointTradeIn_Members");
 
                 entity.HasOne(d => d.fk_Order)
-                    .WithMany(p => p.PointTradeIn)
+                    .WithMany(p => p.PointTradeIns)
                     .HasForeignKey(d => d.fk_OrderId)
                     .HasConstraintName("FK_PointTradeIn_orders");
             });
 
-            modelBuilder.Entity<Privileges>(entity =>
+            modelBuilder.Entity<Privilege>(entity =>
             {
-                entity.HasKey(e => e.PrivilegeId)
-                    .HasName("PK__Privileg__B3E77E5C75DCF9CC");
-
                 entity.Property(e => e.Description).HasMaxLength(300);
 
                 entity.Property(e => e.PrivilegeName)
@@ -673,126 +656,8 @@ namespace FlexCore.Models
                     .HasMaxLength(30);
             });
 
-            modelBuilder.Entity<ProductCategories>(entity =>
+            modelBuilder.Entity<Product>(entity =>
             {
-                entity.HasKey(e => e.ProductCategoryId)
-                    .HasName("PK_ProductCategory");
-
-                entity.Property(e => e.CategoryPath)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.ProductCategoryName)
-                    .IsRequired()
-                    .HasMaxLength(50);
-
-                entity.HasOne(d => d.fk_SalesCategory)
-                    .WithMany(p => p.ProductCategories)
-                    .HasForeignKey(d => d.fk_SalesCategoryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductCategories_SalesCategories");
-            });
-
-            modelBuilder.Entity<ProductComment>(entity =>
-            {
-                entity.HasNoKey();
-
-                entity.Property(e => e.CreateTime)
-                    .HasColumnType("datetime")
-                    .HasDefaultValueSql("(getdate())");
-
-                entity.Property(e => e.Description)
-                    .IsRequired()
-                    .HasMaxLength(1000);
-
-                entity.Property(e => e.Id).ValueGeneratedOnAdd();
-
-                entity.HasOne(d => d.fk_Member)
-                    .WithMany()
-                    .HasForeignKey(d => d.fk_MemberId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductComment_Members");
-
-                entity.HasOne(d => d.fk_ProductGroup)
-                    .WithMany()
-                    .HasForeignKey(d => d.fk_ProductGroupId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductComment_ProductGroups");
-            });
-
-            modelBuilder.Entity<ProductGroups>(entity =>
-            {
-                entity.HasKey(e => e.ProductGroupId);
-
-                entity.Property(e => e.fk_ProductId)
-                    .IsRequired()
-                    .HasMaxLength(254)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.fk_Color)
-                    .WithMany(p => p.ProductGroups)
-                    .HasForeignKey(d => d.fk_ColorId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductGroups_ColorCategories");
-
-                entity.HasOne(d => d.fk_Product)
-                    .WithMany(p => p.ProductGroups)
-                    .HasForeignKey(d => d.fk_ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductGroups_Products");
-
-                entity.HasOne(d => d.fk_Size)
-                    .WithMany(p => p.ProductGroups)
-                    .HasForeignKey(d => d.fk_SizeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductGroups_SizeCategories");
-            });
-
-            modelBuilder.Entity<ProductImgs>(entity =>
-            {
-                entity.HasKey(e => e.ProductImgId)
-                    .HasName("PK_ProductImg");
-
-                entity.Property(e => e.ImgPath)
-                    .IsRequired()
-                    .HasMaxLength(100);
-
-                entity.Property(e => e.fk_ProductId)
-                    .IsRequired()
-                    .HasMaxLength(254)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.fk_Product)
-                    .WithMany(p => p.ProductImgs)
-                    .HasForeignKey(d => d.fk_ProductId)
-                    .HasConstraintName("FK_ProductImgs_Products");
-            });
-
-            modelBuilder.Entity<ProductSubCategories>(entity =>
-            {
-                entity.HasKey(e => e.ProductSubCategoryId)
-                    .HasName("PK_ProductSubCategory");
-
-                entity.Property(e => e.ProductSubCategoryName)
-                    .IsRequired()
-                    .HasMaxLength(50);
-
-                entity.Property(e => e.SubCategoryPath)
-                    .IsRequired()
-                    .HasMaxLength(150);
-
-                entity.HasOne(d => d.fk_ProductCategory)
-                    .WithMany(p => p.ProductSubCategories)
-                    .HasForeignKey(d => d.fk_ProductCategoryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ProductSubCategories_ProductCategories");
-            });
-
-            modelBuilder.Entity<Products>(entity =>
-            {
-                entity.HasKey(e => e.ProductId)
-                    .HasName("PK_Product");
-
                 entity.Property(e => e.ProductId)
                     .HasMaxLength(254)
                     .IsUnicode(false)
@@ -835,7 +700,128 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_Product_ProductSubCategory");
             });
 
-            modelBuilder.Entity<ProjectTagItems>(entity =>
+            modelBuilder.Entity<ProductCategory>(entity =>
+            {
+                entity.Property(e => e.CategoryPath)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.ProductCategoryName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.HasOne(d => d.fk_SalesCategory)
+                    .WithMany(p => p.ProductCategories)
+                    .HasForeignKey(d => d.fk_SalesCategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductCategories_SalesCategories");
+            });
+
+            modelBuilder.Entity<ProductComment>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("ProductComment");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Description)
+                    .IsRequired()
+                    .HasMaxLength(1000);
+
+                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+
+                entity.HasOne(d => d.fk_Member)
+                    .WithMany()
+                    .HasForeignKey(d => d.fk_MemberId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductComment_Members");
+
+                entity.HasOne(d => d.fk_ProductGroup)
+                    .WithMany()
+                    .HasForeignKey(d => d.fk_ProductGroupId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductComment_ProductGroups");
+            });
+
+            modelBuilder.Entity<ProductGroup>(entity =>
+            {
+                entity.Property(e => e.fk_ProductId)
+                    .IsRequired()
+                    .HasMaxLength(254)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.fk_Color)
+                    .WithMany(p => p.ProductGroups)
+                    .HasForeignKey(d => d.fk_ColorId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductGroups_ColorCategories");
+
+                entity.HasOne(d => d.fk_Product)
+                    .WithMany(p => p.ProductGroups)
+                    .HasForeignKey(d => d.fk_ProductId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductGroups_Products");
+
+                entity.HasOne(d => d.fk_Size)
+                    .WithMany(p => p.ProductGroups)
+                    .HasForeignKey(d => d.fk_SizeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductGroups_SizeCategories");
+            });
+
+            modelBuilder.Entity<ProductImg>(entity =>
+            {
+                entity.Property(e => e.ImgPath)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.fk_ProductId)
+                    .IsRequired()
+                    .HasMaxLength(254)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.fk_Product)
+                    .WithMany(p => p.ProductImgs)
+                    .HasForeignKey(d => d.fk_ProductId)
+                    .HasConstraintName("FK_ProductImgs_Products");
+            });
+
+            modelBuilder.Entity<ProductSubCategory>(entity =>
+            {
+                entity.Property(e => e.ProductSubCategoryName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.SubCategoryPath)
+                    .IsRequired()
+                    .HasMaxLength(150);
+
+                entity.HasOne(d => d.fk_ProductCategory)
+                    .WithMany(p => p.ProductSubCategories)
+                    .HasForeignKey(d => d.fk_ProductCategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_ProductSubCategories_ProductCategories");
+            });
+
+            modelBuilder.Entity<ProjectTag>(entity =>
+            {
+                entity.Property(e => e.CreateAt).HasColumnType("datetime");
+
+                entity.Property(e => e.ModifiedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.ProjectTagName)
+                    .IsRequired()
+                    .HasMaxLength(30);
+
+                entity.Property(e => e.Status)
+                    .IsRequired()
+                    .HasDefaultValueSql("((1))");
+            });
+
+            modelBuilder.Entity<ProjectTagItem>(entity =>
             {
                 entity.HasKey(e => new { e.fk_ProjectTagId, e.fk_ProductId })
                     .HasName("PK_discount_group_item");
@@ -850,30 +836,21 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_discount_group_item_discount_group");
             });
 
-            modelBuilder.Entity<ProjectTags>(entity =>
+            modelBuilder.Entity<ReservationImg>(entity =>
             {
-                entity.HasKey(e => e.ProjectTagId)
-                    .HasName("PK_discount_group");
+                entity.ToTable("ReservationImg");
 
-                entity.Property(e => e.CreateAt).HasColumnType("datetime");
-
-                entity.Property(e => e.ModifiedAt).HasColumnType("datetime");
-
-                entity.Property(e => e.ProjectTagName)
+                entity.Property(e => e.ImgPath)
                     .IsRequired()
-                    .HasMaxLength(30);
-
-                entity.Property(e => e.Status)
-                    .IsRequired()
-                    .HasDefaultValueSql("((1))");
+                    .HasMaxLength(300);
             });
 
-            modelBuilder.Entity<ReservationStatuses>(entity =>
+            modelBuilder.Entity<ReservationStatus>(entity =>
             {
                 entity.HasKey(e => e.ReservationId)
-                    .HasName("PK__Reservat__B7EE5F2431DCBA74");
+                    .HasName("PK__Reservat__B7EE5F24472F6470");
 
-                entity.HasIndex(e => e.ReservationStatusDescription, "UQ__Reservat__ADF40EA6B0EDC863")
+                entity.HasIndex(e => e.ReservationStatusDescription, "UQ__Reservat__ADF40EA6C59C997E")
                     .IsUnique();
 
                 entity.Property(e => e.ReservationId).ValueGeneratedNever();
@@ -883,27 +860,21 @@ namespace FlexCore.Models
                     .HasMaxLength(10);
             });
 
-            modelBuilder.Entity<SalesCategories>(entity =>
+            modelBuilder.Entity<SalesCategory>(entity =>
             {
-                entity.HasKey(e => e.SalesCategoryId)
-                    .HasName("PK_SalesCategory");
-
                 entity.Property(e => e.SalesCategoryName)
                     .IsRequired()
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<ShoesCategories>(entity =>
+            modelBuilder.Entity<ShoesCategory>(entity =>
             {
-                entity.HasKey(e => e.ShoesCategoryId)
-                    .HasName("PK__ShoesCat__A478678B74E6DCA4");
-
                 entity.Property(e => e.ShoesCategoryName)
                     .IsRequired()
                     .HasMaxLength(254);
             });
 
-            modelBuilder.Entity<ShoesChooses>(entity =>
+            modelBuilder.Entity<ShoesChoose>(entity =>
             {
                 entity.HasKey(e => e.OptionId);
 
@@ -912,10 +883,10 @@ namespace FlexCore.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<ShoesColorCategories>(entity =>
+            modelBuilder.Entity<ShoesColorCategory>(entity =>
             {
                 entity.HasKey(e => e.ShoesColorId)
-                    .HasName("PK__ShoesCol__BB1469D47D273DC9");
+                    .HasName("PK__ShoesCol__BB1469D4AADA5430");
 
                 entity.Property(e => e.ColorCode).HasMaxLength(100);
 
@@ -924,10 +895,8 @@ namespace FlexCore.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<ShoesGroups>(entity =>
+            modelBuilder.Entity<ShoesGroup>(entity =>
             {
-                entity.HasKey(e => e.ShoesGroupId);
-
                 entity.Property(e => e.Remark).HasMaxLength(254);
 
                 entity.HasOne(d => d.fk_Material)
@@ -955,10 +924,10 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_ShoesGroups_CustomizedShoesPo");
             });
 
-            modelBuilder.Entity<ShoesPictures>(entity =>
+            modelBuilder.Entity<ShoesPicture>(entity =>
             {
                 entity.HasKey(e => e.ShoesPicture_Id)
-                    .HasName("PK__ShoesPic__DF35EBA437E043B8");
+                    .HasName("PK__ShoesPic__DF35EBA472F4460E");
 
                 entity.Property(e => e.ShoesPictureUrl).HasMaxLength(4000);
 
@@ -968,7 +937,7 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__ShoesPict__fk_Sh__70A8B9AE");
             });
 
-            modelBuilder.Entity<ShoppingCarts>(entity =>
+            modelBuilder.Entity<ShoppingCart>(entity =>
             {
                 entity.HasKey(e => e.CartId)
                     .HasName("PK_ShoppingCart");
@@ -979,7 +948,7 @@ namespace FlexCore.Models
                     .HasConstraintName("FK_ShoppingCarts_Members");
             });
 
-            modelBuilder.Entity<SizeCategories>(entity =>
+            modelBuilder.Entity<SizeCategory>(entity =>
             {
                 entity.HasKey(e => e.SizeId);
 
@@ -988,21 +957,8 @@ namespace FlexCore.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<SpeakerFields>(entity =>
+            modelBuilder.Entity<Speaker>(entity =>
             {
-                entity.HasKey(e => e.FieldId)
-                    .HasName("PK__SpeakerF__C8B6FF0769661A00");
-
-                entity.Property(e => e.FieldName)
-                    .IsRequired()
-                    .HasMaxLength(50);
-            });
-
-            modelBuilder.Entity<Speakers>(entity =>
-            {
-                entity.HasKey(e => e.SpeakerId)
-                    .HasName("PK__Speakers__79E7575976EE1BB6");
-
                 entity.Property(e => e.SpeakerDescription).HasMaxLength(500);
 
                 entity.Property(e => e.SpeakerImg)
@@ -1029,21 +985,18 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__Speakers__fk_Spe__7EF6D905");
             });
 
-            modelBuilder.Entity<StaffPermissions>(entity =>
+            modelBuilder.Entity<SpeakerField>(entity =>
             {
-                entity.HasKey(e => e.PermissionsId)
-                    .HasName("PK__StaffPer__1EDAF9A81349059A");
+                entity.HasKey(e => e.FieldId)
+                    .HasName("PK__SpeakerF__C8B6FF079D5CA91E");
 
-                entity.HasIndex(e => e.LevelName, "UQ__StaffPer__9EF3BE7B6829F02D")
-                    .IsUnique();
-
-                entity.Property(e => e.LevelName).HasMaxLength(30);
+                entity.Property(e => e.FieldName)
+                    .IsRequired()
+                    .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Staffs>(entity =>
+            modelBuilder.Entity<Staff>(entity =>
             {
-                entity.HasKey(e => e.StaffId);
-
                 entity.Property(e => e.Account)
                     .IsRequired()
                     .HasMaxLength(30)
@@ -1077,30 +1030,38 @@ namespace FlexCore.Models
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.fk_Department)
-                    .WithMany(p => p.Staffs)
+                    .WithMany(p => p.Staff)
                     .HasForeignKey(d => d.fk_DepartmentId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Staffs__fk_Depar__74794A92");
 
                 entity.HasOne(d => d.fk_Permissions)
-                    .WithMany(p => p.Staffs)
+                    .WithMany(p => p.Staff)
                     .HasForeignKey(d => d.fk_PermissionsId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Staffs__fk_Permi__756D6ECB");
 
                 entity.HasOne(d => d.fk_Title)
-                    .WithMany(p => p.Staffs)
+                    .WithMany(p => p.Staff)
                     .HasForeignKey(d => d.fk_TitleId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Staffs__fk_Title__76619304");
             });
 
-            modelBuilder.Entity<Suppliers>(entity =>
+            modelBuilder.Entity<StaffPermission>(entity =>
             {
-                entity.HasKey(e => e.SupplierId)
-                    .HasName("PK__Supplier__4BE666B41A683586");
+                entity.HasKey(e => e.PermissionsId)
+                    .HasName("PK__StaffPer__1EDAF9A81349059A");
 
-                entity.HasIndex(e => e.SupplierCompanyNumber, "UQ__Supplier__AE8E9B4184D1BD96")
+                entity.HasIndex(e => e.LevelName, "UQ__StaffPer__9EF3BE7B6829F02D")
+                    .IsUnique();
+
+                entity.Property(e => e.LevelName).HasMaxLength(30);
+            });
+
+            modelBuilder.Entity<Supplier>(entity =>
+            {
+                entity.HasIndex(e => e.SupplierCompanyNumber, "UQ__Supplier__AE8E9B416BA7D4F4")
                     .IsUnique();
 
                 entity.Property(e => e.SupplierCompanyAddress).HasMaxLength(250);
@@ -1118,12 +1079,14 @@ namespace FlexCore.Models
 
             modelBuilder.Entity<Type>(entity =>
             {
+                entity.ToTable("Type");
+
                 entity.Property(e => e.TypeName)
                     .IsRequired()
                     .HasMaxLength(20);
             });
 
-            modelBuilder.Entity<logistics_companies>(entity =>
+            modelBuilder.Entity<logistics_company>(entity =>
             {
                 entity.Property(e => e.logistics_description).HasMaxLength(50);
 
@@ -1134,33 +1097,7 @@ namespace FlexCore.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<orderItems>(entity =>
-            {
-                entity.Property(e => e.Items_description).HasMaxLength(50);
-
-                entity.Property(e => e.discount_name).HasMaxLength(50);
-
-                entity.Property(e => e.product_name).HasMaxLength(50);
-
-                entity.HasOne(d => d.fk_type)
-                    .WithMany(p => p.orderItems)
-                    .HasForeignKey(d => d.fk_typeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_orderItems_Type");
-
-                entity.HasOne(d => d.order)
-                    .WithMany(p => p.orderItems)
-                    .HasForeignKey(d => d.order_Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__orderItem__order__1B9317B3");
-            });
-
-            modelBuilder.Entity<order_statuses>(entity =>
-            {
-                entity.Property(e => e.order_status).HasMaxLength(50);
-            });
-
-            modelBuilder.Entity<orders>(entity =>
+            modelBuilder.Entity<order>(entity =>
             {
                 entity.Property(e => e.cellphone)
                     .IsRequired()
@@ -1219,14 +1156,46 @@ namespace FlexCore.Models
                     .HasConstraintName("FK__orders__pay_stat__5E8A0973");
             });
 
-            modelBuilder.Entity<pay_methods>(entity =>
+            modelBuilder.Entity<orderItem>(entity =>
             {
-                entity.Property(e => e.pay_method).HasMaxLength(50);
+                entity.Property(e => e.Items_description).HasMaxLength(50);
+
+                entity.Property(e => e.discount_name).HasMaxLength(50);
+
+                entity.Property(e => e.product_name).HasMaxLength(50);
+
+                entity.HasOne(d => d.fk_type)
+                    .WithMany(p => p.orderItems)
+                    .HasForeignKey(d => d.fk_typeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_orderItems_Type");
+
+                entity.HasOne(d => d.order)
+                    .WithMany(p => p.orderItems)
+                    .HasForeignKey(d => d.order_Id)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__orderItem__order__1B9317B3");
             });
 
-            modelBuilder.Entity<pay_statuses>(entity =>
+            modelBuilder.Entity<order_status>(entity =>
             {
-                entity.Property(e => e.pay_status).HasMaxLength(50);
+                entity.Property(e => e.order_status1)
+                    .HasMaxLength(50)
+                    .HasColumnName("order_status");
+            });
+
+            modelBuilder.Entity<pay_method>(entity =>
+            {
+                entity.Property(e => e.pay_method1)
+                    .HasMaxLength(50)
+                    .HasColumnName("pay_method");
+            });
+
+            modelBuilder.Entity<pay_status>(entity =>
+            {
+                entity.Property(e => e.pay_status1)
+                    .HasMaxLength(50)
+                    .HasColumnName("pay_status");
             });
 
             OnModelCreatingPartial(modelBuilder);

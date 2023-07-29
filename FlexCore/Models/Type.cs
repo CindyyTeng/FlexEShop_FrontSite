@@ -9,20 +9,20 @@ namespace FlexCore.Models
     {
         public Type()
         {
-            CartItems = new HashSet<CartItems>();
-            PointHistories = new HashSet<PointHistories>();
-            PointManage = new HashSet<PointManage>();
-            orderItems = new HashSet<orderItems>();
-            orders = new HashSet<orders>();
+            CartItems = new HashSet<CartItem>();
+            PointHistories = new HashSet<PointHistory>();
+            PointManages = new HashSet<PointManage>();
+            orderItems = new HashSet<orderItem>();
+            orders = new HashSet<order>();
         }
 
         public int TypeId { get; set; }
         public string TypeName { get; set; }
 
-        public virtual ICollection<CartItems> CartItems { get; set; }
-        public virtual ICollection<PointHistories> PointHistories { get; set; }
-        public virtual ICollection<PointManage> PointManage { get; set; }
-        public virtual ICollection<orderItems> orderItems { get; set; }
-        public virtual ICollection<orders> orders { get; set; }
+        public virtual ICollection<CartItem> CartItems { get; set; }
+        public virtual ICollection<PointHistory> PointHistories { get; set; }
+        public virtual ICollection<PointManage> PointManages { get; set; }
+        public virtual ICollection<orderItem> orderItems { get; set; }
+        public virtual ICollection<order> orders { get; set; }
     }
 }
