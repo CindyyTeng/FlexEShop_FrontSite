@@ -5,6 +5,8 @@
 
 @*body內容*@
 <div id="app">
+    <input type="text" v-model="id">
+    {{id}}
     <div class="mb-3">
         <label class="form-label">姓名</label>
         <input type="text" v-model="name" class="form-control" placeholder="請輸入姓名">
@@ -36,8 +38,23 @@
             data() {
                 return {
                     name: "",
-                    phone: ""
+                    phone: "",
+                    id: 1
                 };
+            },
+            created() {
+                // 在 Vue 實例創建時呼叫 Web API
+                var uri = `https://localhost:7238/api/Activity/${this.id}`;
+                axios.get(uri)
+                    .then(res => {
+                        console.log(res.data);
+                        // 設定 name 和 phone 的預設值
+                        this.name = res.data.name;
+                        this.phone = res.data.mobile;
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
             },
             methods: {
                 send: function () {
@@ -48,15 +65,15 @@
                     }
                     console.log(req);
                     axios.get(uri, {
-                        params:{
+                        params: {
                             name: this.name,
                             phone: this.phone
                         }
                     })
-                        .then(res=>{
+                        .then(res => {
                             console.log(res.data)
                         })
-                        .catch(res=>{
+                        .catch(res => {
                             alert(res);
                         });
                 }
