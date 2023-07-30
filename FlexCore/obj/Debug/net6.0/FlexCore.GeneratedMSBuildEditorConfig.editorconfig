@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\FlexEShop_FrontSite\FlexCore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/FlexEShop_FrontSite/FlexCore/Views/Activity/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/FlexEShop_FrontSite/FlexCore/Views/Activity/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
